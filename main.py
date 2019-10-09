@@ -1,6 +1,7 @@
-import sys
 from model import Model
 
-model = Model() 
+model = Model()
 
-model.train()
+if __name__ == '__main__':
+    result = model.train()
+    #model.test()

@@ -9,7 +9,4 @@ FEATURES = ['YearsCoding','YearsCodingProf', 'Dependents', 'Age']
 
 TARGET = "YearsCodingProf"
 
-""" Pretrained model """
-MODEL_PATH = os.path.join(PROJECT_ROOT, '.', 'model.h5')
-
 BATCH_SIZE = 256 
