@@ -1,8 +1,8 @@
 from model import Model
 
 # Create instance of model class
-model = Model()
+DNN = Model()
 
 if __name__ == '__main__':
-    trained_model = model.train()
-    tested_model = model.test(trained_model)
+    trained_model = DNN.train()
+    tested_model = DNN.test(trained_model)

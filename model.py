@@ -30,11 +30,12 @@ class Model:
         )
 
         classifier.train(
-            input_fn=lambda: self.input_fn(train, train_y, training=True),
+            input_fn=lambda: self._input_fn(train, train_y, training=True),
             steps=5000
         )
-     #   eval_result = classifier.evaluate(input_fn=lambda: self.input_fn(test, test_y, training=False))
-     #   print('\nTest set recall: {accuracy:0.3f}\n'.format(**eval_result))
+
+        eval_result = classifier.evaluate(input_fn=lambda: self._input_fn(test, test_y, training=False))
+        print('\nTest set recall: {accuracy:0.3f}\n'.format(**eval_result))
         return classifier
 
     def test(self, classifier):
@@ -47,7 +48,7 @@ class Model:
         }
 
         predictions = classifier.predict(
-            input_fn=lambda: self.input_fn_pred(predict_x))
+            input_fn=lambda: self._input_fn_pred(predict_x))
 
         for pred_dict, exp in zip(predictions, expected):
             class_id = pred_dict['class_ids'][0]
@@ -57,7 +58,7 @@ class Model:
             print(f'{res}, {prob:0.3f}, {exp}')
 
     @staticmethod
-    def input_fn(features, labels, training=True, batch_size=BATCH_SIZE):
+    def _input_fn(features, labels, training=True, batch_size=BATCH_SIZE):
         """An input function for training or evaluating"""
         # Convert the inputs to a Dataset.
         dataset = tf.data.Dataset.from_tensor_slices((dict(features), labels))
@@ -68,6 +69,7 @@ class Model:
         return dataset.batch(batch_size)
 
     @staticmethod
-    def input_fn_pred(features, batch_size=BATCH_SIZE):
+    def _input_fn_pred(features, batch_size=BATCH_SIZE):
         """An input function for prediction."""
         return tf.data.Dataset.from_tensor_slices(dict(features)).batch(batch_size)
+

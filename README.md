@@ -11,11 +11,11 @@ Download kaggle data from [here](https://drive.google.com/open?id=1o5ZTT1O173Qr8
 ## Results 
 Final results on validation set can be found [here](http://bit.ly/kaggle_survey_classifier)
 
-Precision = 81%
+Overall Precision = 81%
 
-Recall = 60%
+Overall Recall = 60%
 
-f1 = 69%
+Overall f1 = 69%
 
 Sample size error = sqrt(1/185) = 7%
 
