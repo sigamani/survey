@@ -1,6 +1,6 @@
 # Task 
   
-## Survey of https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey
+## Analysis of https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey
 
 1) In a conda environment or otherwise: `pip install -r requirements.txt`
 
@@ -10,7 +10,9 @@
 Final results on validation set here: http://bit.ly/kaggle_survey_classifier
 
 Precision = 82%
+
 Recall = 57%
+
 f1 = 67%
 
 Sample size error = sqrt(1/185) = 7%
