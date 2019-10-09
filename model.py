@@ -33,8 +33,8 @@ class Model:
             input_fn=lambda: self.input_fn(train, train_y, training=True),
             steps=5000
         )
-        eval_result = classifier.evaluate(input_fn=lambda: self.input_fn(test, test_y, training=False))
-        print('\nTest set recall: {accuracy:0.3f}\n'.format(**eval_result))
+     #   eval_result = classifier.evaluate(input_fn=lambda: self.input_fn(test, test_y, training=False))
+     #   print('\nTest set recall: {accuracy:0.3f}\n'.format(**eval_result))
         return classifier
 
     def test(self, classifier):
