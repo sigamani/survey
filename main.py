@@ -1,7 +1,8 @@
 from model import Model
 
+# Create instance of model class
 model = Model()
 
 if __name__ == '__main__':
-    result = model.train()
-    #model.test()
+    trained_model = model.train()
+    tested_model = model.test(trained_model)

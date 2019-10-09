@@ -11,13 +11,15 @@ Download kaggle data from [here](https://drive.google.com/open?id=1o5ZTT1O173Qr8
 ## Results 
 Final results on validation set can be found [here](http://bit.ly/kaggle_survey_classifier)
 
-Precision = 82%
+Precision = 81%
 
-Recall = 57%
+Recall = 60%
 
-f1 = 67%
+f1 = 69%
 
 Sample size error = sqrt(1/185) = 7%
+
+NB. I have a shuffle function in the model class when training. This is to test the effect of redistributing the training data. Which should be within the sample size error in terms of quoted precision and recall. So one would not always replicate the results of the spreadsheet when running on the fly. But this effect is less than 5%. 
 
 The overall results for the precision of the classifier are reasonably good given the time of execution for the task. There were a few things I would have spent more time on if time were available:
 
