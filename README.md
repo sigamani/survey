@@ -2,7 +2,7 @@
   
 ## Setup 
 
-Download kaggle data from [here] (https://drive.google.com/open?id=1o5ZTT1O173Qr8Ye_2Rx7f_9W37Mhdfq3) and place in data folder
+Download kaggle data from [here](https://drive.google.com/open?id=1o5ZTT1O173Qr8Ye_2Rx7f_9W37Mhdfq3) and place in data folder
 
 1) In a conda environment or otherwise: `pip install -r requirements.txt`
 
