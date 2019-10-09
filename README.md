@@ -12,7 +12,9 @@ Download kaggle data from [here](https://drive.google.com/open?id=1o5ZTT1O173Qr8
 Final results on validation set can be found [here](http://bit.ly/kaggle_survey_classifier)
 
 Precision = 82%
+
 Recall = 57%
+
 f1 = 67%
 
 Sample size error = sqrt(1/185) = 7%
