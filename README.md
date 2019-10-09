@@ -1,13 +1,15 @@
 # Task 
   
-## Analysis of https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey
+## Setup 
+
+Download kaggle data from [here] (https://drive.google.com/open?id=1o5ZTT1O173Qr8Ye_2Rx7f_9W37Mhdfq3) and place in data folder
 
 1) In a conda environment or otherwise: `pip install -r requirements.txt`
 
 2) To run on test set: `python main.py` 
 
-### Results 
-Final results on validation set here: http://bit.ly/kaggle_survey_classifier
+## Results 
+Final results on validation set can be found here: http://bit.ly/kaggle_survey_classifier
 
 Precision = 82%
 
