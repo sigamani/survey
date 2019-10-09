@@ -6,3 +6,5 @@
 
 2) To run: `python run_topic_classification.py`
 
+Final results here:
+http://bit.ly/kaggle_survey_classifier

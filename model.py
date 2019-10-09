@@ -67,6 +67,6 @@ class Model:
         	class_id = pred_dict['class_ids'][0]
         	probability = pred_dict['probabilities'][class_id]
         
-        	print('Prediction is "{}" ({:.1f}%), expected "{}"'.format(
-        		LABELS[class_id], 100 * probability, expec))
+        	#print('Prediction is "{}" ({:.1f}%), expected "{}"'.format(
+        	print(f'{LABELS[class_id]}, {100* probability:1f}, {expec}') 
 
